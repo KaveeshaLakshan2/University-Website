@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <TITLE>Contact</TITLE>    
+    <link rel="stylesheet" href="style.css"> 
+        
+        <!-- font change-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">  <!--for hide menu--> 
+<script src="https://kit.fontawesome.com/4a873e4e96.js" crossorigin="anonymous"></script>
+    </head><!--icon-->
+    
+    
+    
+    <BODY>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a><!-- logo -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <!--close button for smaller screen-->
+                    <ul>
+                        <!-- header part-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i><!--menu button smaller screen-->
+            </nav>
+            <h1>Contact Us</h1>
+         </section>
+        
+<!--------contact----------->        
+     
+<section class="location">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.811318799536!2d80.35084717563284!3d7.486075411228335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae33a179f159f15%3A0x39b4fde4a9015601!2sAdvanced%20Technological%20Institute!5e0!3m2!1sen!2slk!4v1700586565067!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+        
+</section>
+        
+<Section class="contact-us">
+        
+   <div class="row">
+        <div class="contact-col">
+        <div>
+        <i class="fa fa-home"></i>
+            <span>
+            <h5>No.22/1, Wilgoda Road, Kurunagala</h5>
+            </span>
+        </div>
+         <div>
+        <i class="fa fa-phone"></i>
+            <span>
+            <h5>037-2224911/037-2229583/0714882528</h5>
+            <p>Monday to sunday,9AM to 5PM</p>
+            </span>
+        </div>
+         <div>
+        <i class="fa fa-envelope-o"></i>
+            <span>
+            <h5>atikurunegala@sliate.ac.lk.</h5>
+                <p>Email us</p>
+            </span>
+        </div>
+     </div>
+     <div class="contact-col">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter email address" required>
+        <input type="text" placeholder="Enter your subject" required>
+         <textarea rows="8" placeholder="Message" required></textarea>
+         <button type="submit" class="slt-btn red-btn">Send Message</button>
+       </div>   
+    </div>
+</Section>
+                
+        
+        
+        
+        
+        
+        
+        
+
+<!--footer-->
+<section class="footer">
+     <h4>About us</h4>
+    <p>SLIATE has been a cornerstone of my educational journey, offering a stimulating environment that encourages exploration and learning. The institution's commitment to academic rigor is complemented by a strong</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/sliate.ac.lk" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/sliateofficial" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sliateofficial/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/sliate/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCJJJCxCU9FDbyGmOfWfzdpA" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+</section> 
+
+        
+        <!--javascript for menu-->  
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+ window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    var scrollPos = window.scrollY;
+
+    // Adjust the blur strength based on scroll position
+    if (scrollPos > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});       
+               
+</script>
+
+        
+    </BODY>
+</html>

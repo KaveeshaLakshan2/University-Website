@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <TITLE>About</TITLE>    
+    <link rel="stylesheet" href="style.css"> 
+        
+        <!-- font change-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">  <!--for hide menu--> 
+<script src="https://kit.fontawesome.com/4a873e4e96.js" crossorigin="anonymous"></script>
+    </head><!--icon-->
+    
+    
+    
+    <BODY>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a><!-- logo -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <!--close button for smaller screen-->
+                    <ul>
+                        <!-- header part-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i><!--menu button smaller screen-->
+            </nav>
+            <h1>About Us</h1>
+         </section>
+        
+<!-------- about us content ----------->        
+     
+<section class="about-us">
+        
+    <div class="row">
+        <div class="about-col">
+        <h2 style="color:#f44336;">Our Misson</h2>
+            <p> "Creating Excellent Higher National and National Diplomates with Modern Technology for Sustainable Development"</p>
+        <h2 style="color:#f44336;">Our Vison</h2>
+            <p>"To Become the Centre of Excellence in Technological Education"</p>
+        <p>As per the recommendations of the Committee appointed by Prof. Wiswa Waranapala, Deputy Minister of Higher Education in 1994, the Sri Lanka Institute of Advanced Technical Education (SLIATE) was formed in 1995, under the Sri Lanka Institute of Advanced Technical Education Act No. 29 of 1995, In 2001 the name of the institution was amended as Sri Lanka Institute of Advanced Technological Education, (SLIATE). It functions as an autonomous Institute for the management of Higher National and National Diploma courses. The main purposes of establishing SLIATE were to reform and restructure the entire technical and vocational education system in relation to the changing needs of economic development, to meet manpower requirements of national development strategies, and the promotion of privatization, With special concern of meeting the scarcity of trained technological manpower resources at the technician level.<br>
+            <br>
+        The SLIATE is a statutory body operating under the purview of the Ministry of Higher Education and is one of the leading higher educational institutions in Srilanka.<br>   
+            <br>
+        SLIATE has been focusing on fostering Advanced Technical Education at post secondary level. It is mandated to establish Advanced Technological Institutes (ATI) in every province for technological education. At present it manages and supervises 11 ATIs and 7 ATI Sections. Its Chief Executive Officer is the Director General while each ATIs and ATI sections are headed by a Director and an Academic Coordinator respectively.</p>
+<a href="" class="slt-btn red-btn">EXPLORE NOW</a>            
+        </div>
+        <div class="about-col">
+            <img src="images/about.us.jpg" >
+        </div>
+    </div>
+</section>        
+
+<!--footer-->
+<section class="footer">
+     <h4>About us</h4>
+    <p>SLIATE has been a cornerstone of my educational journey, offering a stimulating environment that encourages exploration and learning. The institution's commitment to academic rigor is complemented by a strong</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/sliate.ac.lk" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/sliateofficial" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sliateofficial/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/sliate/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCJJJCxCU9FDbyGmOfWfzdpA" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+</section>       
+        
+        
+        <!--javascript for menu-->  
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+        
+    </BODY>
+</html>

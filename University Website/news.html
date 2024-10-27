@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <TITLE>News</TITLE>    
+    <link rel="stylesheet" href="style.css"> 
+        
+        <!-- font change-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">  <!--for hide menu--> 
+<script src="https://kit.fontawesome.com/4a873e4e96.js" crossorigin="anonymous"></script>
+    </head><!--icon-->
+    
+    
+    
+    <BODY>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png"></a><!-- logo -->
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <!--close button for smaller screen-->
+                    <ul>
+                        <!-- header part-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="course.html">Courses</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="staff.html">Staff</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i><!--menu button smaller screen-->
+            </nav>
+            <h1>News</h1>
+         </section>
+<!------------------news------------->
+        
+<section class="news-content">
+<div class="row">
+    <div class="news-left">
+        <img src="images/convection.png">
+        <h2>2023 SLIATE Covercation</h2>
+        <p>"The 2023 SLIATE Institute's Covercation was an electrifying convergence of innovation and academia, marking a triumphant celebration of cutting-edge technological advancements and academic excellence. Held amidst the picturesque landscapes surrounding the institute, this year's Covercation3 embraced a theme of 'Digital Renaissance,' where scholars, tech enthusiasts, and industry pioneers convened to explore the frontiers of emerging technologies. From immersive workshops on artificial intelligence to spirited panel discussions on sustainable tech solutions, the event sparked fervent dialogues and inspired a new wave of interdisciplinary collaborations. Covercation3 was hailed for its dynamic blend of visionary insights and hands-on experiences, empowering attendees to spearhead transformative changes in the digital era."</p>
+    </div>        
+      <div class="news-right">
+         <img src="images/blood.jpg">
+        <h2>2023 Blood donation camp</h2>
+        <p>"The students of HNDIT organized a blood donation camp and it was held on 16th of november 2023.Lot of students helped and they were able to collect 500 packets of blood.Many wonderful people donated blood and we would like to thank each and everyone who helped."</p>
+    </div>  
+</div>
+</section> 
+        
+
+<!--footer-->
+<section class="footer">
+     <h4>About us</h4>
+    <p>SLIATE has been a cornerstone of my educational journey, offering a stimulating environment that encourages exploration and learning. The institution's commitment to academic rigor is complemented by a strong</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/sliate.ac.lk" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/sliateofficial" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/sliateofficial/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/sliate/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCJJJCxCU9FDbyGmOfWfzdpA" target="_blank"><i class="fa fa-youtube"></i></a>
+    </div>
+</section>       
+        
+        
+        <!--javascript for menu-->  
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
+
+<script>
+ window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    var scrollPos = window.scrollY;
+
+    // Adjust the blur strength based on scroll position
+    if (scrollPos > 0) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});       
+               
+</script>
+
+        
+    </BODY>
+</html>
